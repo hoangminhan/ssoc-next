@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {
-   infoWeb: string
-}
+  infoWeb: string;
+};
 
 const AboutSSOC = ({ infoWeb }: Props) => {
-   return (
-      <div>
-         {infoWeb}
-         <p>about ssoc</p>
-      </div>
-   )
-}
-export default AboutSSOC
+  const a = 123;
+  return (
+    <div>
+      {infoWeb}
+      <p>about ssoc</p>
+    </div>
+  );
+};
+export default AboutSSOC;
