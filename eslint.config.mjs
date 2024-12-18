@@ -19,7 +19,7 @@ const eslintConfig = [
          'plugin:prettier/recommended', // Prettier plugin
       ],
       rules: {
-         '@typescript-eslint/no-unused-vars': 'warn',
+         '@typescript-eslint/no-unused-vars': 'error',
          '@typescript-eslint/no-empty-object-type': 'warn',
       },
    }),
