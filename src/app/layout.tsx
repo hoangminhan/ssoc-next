@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import ButtonApp from '@components/ui/button';
 import '../styles/globals.css';
 import { robotoSans } from '@utils/fonts';
+import RootProvider from './provider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,8 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${robotoSans.variable}  antialiased`}>
         <main className="font-roboto-sans">
-          <ButtonApp />
-          {children}
+          <RootProvider>{children}</RootProvider>
         </main>
       </body>
     </html>

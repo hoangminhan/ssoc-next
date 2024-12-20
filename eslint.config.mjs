@@ -21,6 +21,8 @@ const eslintConfig = [
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-empty-object-type': 'warn',
       'prettier/prettier': 'off',
+      // 'no-unused-expressions': 'off',
+      // '@typescript-eslint/no-unused-expressions': 'off',
     },
   }),
 ];
