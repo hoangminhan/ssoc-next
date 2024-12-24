@@ -2,18 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.light {
   --primary-color: '#19ac2b';
   --background: #ffffff;
   --foreground: #171717;
+  --text-color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --text-color: red;
+  --background: #0a0a0a;
+  --foreground: yellow;
 }
+
+/* base on theme of bowerser */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: red;
+    --background: #0a0a0a;
+    --foreground: yellow;
+  }
+} */
 
 body {
   color: var(--foreground);
