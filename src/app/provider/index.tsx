@@ -1,4 +1,5 @@
 'use client';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { AppProvide } from 'context/context-app';
@@ -12,7 +13,9 @@ export default function RootProvider({ children }: IRootProvider) {
   return (
     <QueryClientProvider client={queryClient}>
       <ReactQueryDevtools initialIsOpen={false} />
-      <AppProvide>{children}</AppProvide>;
+      <AntdRegistry>
+        <AppProvide>{children}</AppProvide>;
+      </AntdRegistry>
     </QueryClientProvider>
   );
 }

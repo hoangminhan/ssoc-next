@@ -2,6 +2,7 @@
 import ButtonApp from '@components/ui/button';
 import SwitchTheme from '@components/ui/switch-theme';
 import { useAppContext } from '@hooks/use-app-context';
+import { Button } from 'antd';
 import React from 'react';
 
 export default function LoginPage() {
@@ -11,13 +12,13 @@ export default function LoginPage() {
   return (
     <div className="">
       <ButtonApp />
-      <button
+      <Button
         onClick={() => {
           handleChangeLocale(locale === 'vi' ? 'en' : 'vi');
         }}
       >
         change language
-      </button>
+      </Button>
       <SwitchTheme />
     </div>
   );

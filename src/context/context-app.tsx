@@ -38,6 +38,11 @@ export const AppProvide = ({ children }: { children: React.ReactNode }) => {
   };
 
   const handleSwitchTheme = (theme: AppTheme) => {
+    const savedLocale = localStorage.getItem(keyLocalStorage.theme);
+    if (savedLocale === theme) {
+      return;
+    }
+
     setCurrentTheme(theme);
     localStorage.setItem(keyLocalStorage.theme, theme);
     // if condition is true => add dark class else reomve dark class
