@@ -14,7 +14,7 @@ function SwitchTheme({}: Props) {
           handleSwitchTheme('light');
         }}
       >
-        light
+        light theme
       </button>
       <button
         className="text-text"
